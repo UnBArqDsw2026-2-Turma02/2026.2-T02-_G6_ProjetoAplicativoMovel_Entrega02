@@ -1,0 +1,1 @@
+# 2026.2-T02-_G6_ProjetoAplicativoMovel_Entrega02
