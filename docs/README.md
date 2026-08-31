@@ -14,7 +14,7 @@ Demais diretrizes constam no Moodle.
 # Nome do Projeto
 
 **Código da Disciplina**: FGA0208<br>
-**Número do Grupo**: XX<br>
+**Número do Grupo**: Dirigindo Meu Carro<br>
 **Entrega**: 02<br>
 
 ## Alunos
@@ -33,9 +33,8 @@ Adicione 2 ou mais screenshots em termos de artefatos realizados na entrega.
 
 ( ) SIM
 
-( ) NÃO
+(X) NÃO
 
-Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados na execução.
 
 ## Informações Complementares 
 Quaisquer outras informações adicionais podem ser descritas nessa seção.
