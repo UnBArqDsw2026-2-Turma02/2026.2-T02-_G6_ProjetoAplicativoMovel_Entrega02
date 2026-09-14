@@ -6,7 +6,7 @@
 - **Base**
   - [1. Desenho de Software (Modelagem)](/Base/1.Modelagem.md)
   - Relatórios
-      - [1.1.1. SubEquipe_01](/Base/Relatórios/1.1.1.SubEquipe_01.md)
+      - [1.1.1. SubEquipe_01](/Base/Relatórios/Subequipe_01/1.1.1.SubEquipe_01.md)
       - [1.1.2. SubEquipe_02](/Base/Relatórios/1.1.2.SubEquipe_02.md)
       - [1.1.3. SubEquipe_03](/Base/Relatórios/1.1.3.SubEquipe_03.md)
   - [1.2. Participações - Modelagem](/Base/1.2.ParticipacoesModelagem.md)
