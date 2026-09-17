@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net" modified="2026-09-03T11:00:00.000Z" agent="SubEquipe_03" version="24.0.0">
+  <diagram id="DiagramaClasses_CNH" name="Diagrama de Classes">
+    <mxGraphModel dx="1600" dy="1000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="titulo" value="Diagrama de Classes — Domínio de CNH (SubEquipe_03)" style="text;html=1;align=center;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="10" width="900" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- CONDUTOR — RESERVADO PAPEL 3 -->
+        <mxCell id="c1" value="Condutor&#xa;&#xa;[PAPEL 3 — preencher&#xa;atributos e operações]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b3b3b3;dashed=1;fontSize=12;fontColor=#999999;verticalAlign=top;spacing=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="220" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- HABILITACAO — RESERVADO PAPEL 3 -->
+        <mxCell id="c2" value="Habilitacao&#xa;&#xa;[PAPEL 3 — preencher&#xa;atributos e operações]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b3b3b3;dashed=1;fontSize=12;fontColor=#999999;verticalAlign=top;spacing=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="60" width="220" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- DOCUMENTO DIGITAL — RESERVADO PAPEL 2 -->
+        <mxCell id="c3" value="DocumentoDigital&#xa;&#xa;[PAPEL 2 — preencher&#xa;atributos e operações]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b3b3b3;dashed=1;fontSize=12;fontColor=#999999;verticalAlign=top;spacing=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="60" width="220" height="105" as="geometry" />
+        </mxCell>
+
+        <!-- CHAVE DE ACESSO — RESERVADO PAPEL 2 -->
+        <mxCell id="c4" value="ChaveDeAcesso&#xa;&#xa;[PAPEL 2 — preencher&#xa;atributos e operações]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b3b3b3;dashed=1;fontSize=12;fontColor=#999999;verticalAlign=top;spacing=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="60" width="220" height="105" as="geometry" />
+        </mxCell>
+
+        <!-- SOLICITACAO — DETALHADO ARTUR -->
+        <mxCell id="c5h" value="SolicitacaoAlteracaoCategoria" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="60" y="420" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c5a" value="- categoriaDesejada: String&#xa;- status: String&#xa;- dataSolicitacao: Date" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="60" y="450" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5o" value="+ validarElegibilidade(): boolean&#xa;+ confirmar()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="60" y="510" width="260" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- ORGAO DE TRANSITO — DETALHADO ARTUR -->
+        <mxCell id="c6h" value="OrgaoDeTransito" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="460" y="420" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c6a" value="- uf: String" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="460" y="450" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c6o" value="+ validarCategoria(sol: SolicitacaoAlteracaoCategoria): boolean&#xa;+ encaminharAtendimentoPresencial()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="460" y="480" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- RELACIONAMENTOS -->
+        <mxCell id="r1" value="possui" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;" edge="1" parent="1" source="c1" target="c2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1m1" value="1" style="text;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="115" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="r1m2" value="1" style="text;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="435" y="115" width="20" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r2" value="é representada por" style="edgeStyle=none;html=1;endArrow=diamondThin;startArrow=none;endFill=1;fontSize=11;" edge="1" parent="1" source="c2" target="c3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2m1" value="1" style="text;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="115" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="r2m2" value="1" style="text;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="835" y="115" width="20" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r3" value="protegido por" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;" edge="1" parent="1" source="c3" target="c4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3m1" value="1" style="text;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="105" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="r3m2" value="1" style="text;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="105" width="20" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r4" value="realiza" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;startArrow=none;fontSize=11;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="c1" target="c5h">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4m1" value="1" style="text;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="90" y="360" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="r4m2" value="0..*" style="text;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="90" y="400" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r5" value="validada por" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;" edge="1" parent="1" source="c5o" target="c6h">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5m1" value="0..*" style="text;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="330" y="430" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="r5m2" value="1" style="text;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="435" y="430" width="20" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legenda" value="LEGENDA&#xa;&#xa;Caixa azul cheia = classe detalhada (Artur — agrupamento Processo de Alteração de Categoria)&#xa;Caixa cinza tracejada = classe reservada, aguardando atributos e operações&#xa;Diamante preenchido = composição (o todo controla o ciclo de vida da parte)&#xa;Linha simples = associação (multiplicidade nas duas pontas)&#xa;&#xa;As relações entre todas as classes já foram combinadas em equipe — cada&#xa;responsável detalha atributos e operações da própria classe sem alterar as&#xa;ligações nem as multiplicidades sem antes avisar no grupo." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#999999;align=left;verticalAlign=top;fontSize=11;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="860" y="420" width="420" height="150" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
