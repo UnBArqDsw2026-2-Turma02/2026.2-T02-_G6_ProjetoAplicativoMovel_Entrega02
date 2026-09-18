@@ -11,11 +11,10 @@
               - Estudo
                   - [1.1.1.1. Estudo Base dos Casos de Uso](/Base/Relatorios/Subequipe_01/Yuri/1.1.1.1.EstudoBaseCasosDeUso.md)
               - Entregas
-                  - [1.1.1.2. Diagrama de Casos de Uso](/Base/Relatorios/Subequipe_01/Yuri/1.1.1.2.DiagramaCasosDeUso.md)
-                  - [1.1.1.3. Diagrama de Classes](/Base/Relatorios/Subequipe_01/Yuri/1.1.1.3.DiagramaClasses.md)
-                  - [1.1.1.4. Diagrama de Atividades](/Base/Relatorios/Subequipe_01/Yuri/1.1.1.4.DiagramaAtividades.md)
-                  - [1.1.1.5. Diagrama de Estados](/Base/Relatorios/Subequipe_01/Yuri/1.1.1.5.DiagramaEstados.md)
-                  - [1.1.1.6. Uso de IA Generativa](/Base/Relatorios/Subequipe_01/Yuri/1.1.1.6.UsoIAGenerativa.md)
+                  - [1.1.1.2. FOCO 01 — Modelagem Estática](/Base/Relatorios/Subequipe_01/Yuri/1.1.1.2.Foco01ModelagemEstatica.md)
+                  - [1.1.1.3. FOCO 02 — Modelagem Dinâmica](/Base/Relatorios/Subequipe_01/Yuri/1.1.1.3.Foco02ModelagemDinamica.md)
+                  - [1.1.1.4. FOCO 03 — IA Generativa](/Base/Relatorios/Subequipe_01/Yuri/1.1.1.4.Foco03IAGenerativa.md)
+                  - [1.1.1.5. Versionamento e Referências](/Base/Relatorios/Subequipe_01/Yuri/1.1.1.5.VersionamentoReferencias.md)
           - Edson 
               - [1.1.1.Entrega_Edson](/Base/Relatorios/Subequipe_01/Edson/1.1.1.Entrega_Edson.md)
           - Ricardo
