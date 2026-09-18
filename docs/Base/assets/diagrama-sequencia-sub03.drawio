@@ -1,0 +1,166 @@
+<mxfile host="app.diagrams.net" modified="2026-09-17T20:30:00.000Z" agent="SubEquipe_03" version="24.0.0">
+  <diagram id="DiagramaSequencia_CNH" name="Diagrama de Sequência">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="tt1" value="Diagrama de Sequência — Alteração de Categoria" style="text;html=1;align=center;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="10" width="900" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- HEADERS -->
+        <mxCell id="sh1" value="condutor : Condutor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b3b3b3;dashed=1;fontSize=11;fontColor=#999999;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="50" y="60" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sh2" value="solicitacao :&#xa;SolicitacaoAlteracaoCategoria" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="330" y="60" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sh3" value="habilitacao : Habilitacao" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b3b3b3;dashed=1;fontSize=11;fontColor=#999999;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="650" y="60" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sh4" value="detran : OrgaoDeTransito" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="930" y="60" width="180" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- LIFELINES -->
+        <mxCell id="ll1" style="html=1;endArrow=none;dashed=1;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="100" as="sourcePoint" />
+            <mxPoint x="140" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll2" style="html=1;endArrow=none;dashed=1;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="100" as="sourcePoint" />
+            <mxPoint x="440" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll3" style="html=1;endArrow=none;dashed=1;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="100" as="sourcePoint" />
+            <mxPoint x="740" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll4" style="html=1;endArrow=none;dashed=1;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1020" y="100" as="sourcePoint" />
+            <mxPoint x="1020" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ATIVACOES -->
+        <mxCell id="sa1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="435" y="130" width="10" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="sa2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b3b3b3;" vertex="1" parent="1">
+          <mxGeometry x="735" y="185" width="10" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="sa3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1015" y="305" width="10" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- M1 -->
+        <mxCell id="m1" value="solicitarAlteracaoCategoria(categoriaDesejada)" style="html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="140" as="sourcePoint" />
+            <mxPoint x="435" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- M2 -->
+        <mxCell id="m2" value="consultarCategoriaAtual()" style="html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="195" as="sourcePoint" />
+            <mxPoint x="735" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- M3 return -->
+        <mxCell id="m3" value="categoriaAtual" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="735" y="225" as="sourcePoint" />
+            <mxPoint x="445" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ALT FRAME -->
+        <mxCell id="af1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="380" y="260" width="660" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="at1" value="alt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="380" y="260" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="g1" value="[categoriaDesejada ∈ {C, D, E}]" style="text;html=1;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="430" y="282" width="300" height="18" as="geometry" />
+        </mxCell>
+
+        <!-- M4 -->
+        <mxCell id="m4" value="encaminharAtendimentoPresencial()" style="html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="320" as="sourcePoint" />
+            <mxPoint x="1015" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- M5 return -->
+        <mxCell id="m5" value="confirmação de encaminhamento" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1015" y="350" as="sourcePoint" />
+            <mxPoint x="445" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- DIVIDER -->
+        <mxCell id="dv1" style="html=1;endArrow=none;dashed=1;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="390" as="sourcePoint" />
+            <mxPoint x="1040" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g2" value="[else]" style="text;html=1;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="390" y="398" width="100" height="18" as="geometry" />
+        </mxCell>
+
+        <!-- M6 -->
+        <mxCell id="m6" value="validarCategoria(solicitacao)" style="html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="430" as="sourcePoint" />
+            <mxPoint x="1015" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- M7 return -->
+        <mxCell id="m7" value="elegível: boolean" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1015" y="460" as="sourcePoint" />
+            <mxPoint x="445" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- M8 self-message -->
+        <mxCell id="m8" value="confirmar()" style="html=1;endArrow=block;endFill=1;fontSize=10;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="485" as="sourcePoint" />
+            <mxPoint x="445" y="505" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="485" />
+              <mxPoint x="500" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- M9 return final -->
+        <mxCell id="m9" value="statusAtualizado" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="560" as="sourcePoint" />
+            <mxPoint x="140" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="nt1" value="Fluxo termina aqui — a etapa de registro efetivo da solicitação não foi observada&#xa;durante a Engenharia Reversa da Entrega 1 (ver achado no BPMN), por isso não é&#xa;modelada nesta sequência. Elo direto: os passos deste diagrama correspondem às&#xa;tarefas &quot;Consultar categoria e filtrar opções&quot;, ao gateway &quot;Categoria C, D ou E?&quot;,&#xa;e às tarefas &quot;Orientar Detran&quot; / &quot;Selecionar categoria e confirmar&quot; do BPMN da Entrega 1." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#999999;align=left;verticalAlign=top;fontSize=10;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="380" y="590" width="660" height="80" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
