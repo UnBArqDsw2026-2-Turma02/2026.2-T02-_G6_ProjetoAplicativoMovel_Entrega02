@@ -40,3 +40,6 @@ Documento de rastro metodológico. Usado para conferir cada artefato antes de co
 - [ ] Cada artefato tem o arquivo-fonte (`.drawio`) commitado junto com o `.svg`
 - [ ] Cada artefato tem uma tabela de responsáveis por agrupamento/autor
 - [ ] Nenhum diagrama foi aceito sem comparação com os achados reais da Entrega 1
+
+
+**Relacionado:** [Ata da reunião de divisão](ata-reuniao-sub03.md)
