@@ -1,1 +1,78 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 15
+skinparam classAttributeIconSize 0
+skinparam roundcorner 8
+skinparam classBackgroundColor #F0F6FA
+skinparam classBorderColor #254C66
+skinparam ArrowColor #254C66
+skinparam nodesep 55
+skinparam ranksep 55
+hide circle
+title Modelo estático UML - identificação de condutor\nProposta conceitual | SubEquipe 02 | v1.0
 
+class Pessoa {
+  - id : String
+  - nome : String
+}
+class Veiculo {
+  - placa : String
+}
+class AutoInfracao {
+  - numero : String
+  - limiteIndicacao : DateTime
+  + noPrazo(agora : DateTime) : Boolean
+}
+class SolicitacaoIndicacao {
+  - id : String
+  - criadaEm : DateTime
+  - protocolo : String [0..1]
+  - /situacao : SituacaoIndicacao
+  + editarDados()
+  + enviar(agora : DateTime)
+  + iniciarAnalise()
+  + deferir(fundamentacao : String)
+  + indeferir(fundamentacao : String)
+  + cancelar()
+}
+class Anexo {
+  - id : String
+  - tipo : String
+  - referencia : String
+}
+class Decisao {
+  - deferida : Boolean
+  - fundamentacao : String
+  - emitidaEm : DateTime
+}
+
+Veiculo "1" -- "0..*" AutoInfracao : autuações
+AutoInfracao "1" -- "0..*" SolicitacaoIndicacao : histórico de solicitações
+Pessoa "1" -- "0..*" SolicitacaoIndicacao : requerente
+Pessoa "0..1" -- "0..*" SolicitacaoIndicacao : condutor indicado
+SolicitacaoIndicacao "1" *-- "0..*" Anexo : evidências anexadas
+SolicitacaoIndicacao "1" *-- "0..1" Decisao : resultado
+
+note right of AutoInfracao
+  DateTime: tipo de domínio.
+  Limite fornecido pela fonte competente;
+  nenhum prazo legal é fixado no modelo.
+end note
+note right of SolicitacaoIndicacao
+  {Uma solicitação abrange um auto.}
+  {Condutor obrigatório após protocolo.}
+  {No máximo uma solicitação ativa por auto.}
+  /situacao deriva da máquina de estados.
+  Regras do protótipo: não são fatos
+  sobre a implementação do Detran-DF.
+end note
+legend bottom
+  SituacaoIndicacao = {Rascunho, Protocolada, EmAnalise,
+  Deferida, Indeferida, Cancelada, Expirada}
+  + operação pública | - atributo privado | / propriedade derivada
+  0..1 opcional | 0..* vários | losango cheio: composição
+endlegend
+@enduml

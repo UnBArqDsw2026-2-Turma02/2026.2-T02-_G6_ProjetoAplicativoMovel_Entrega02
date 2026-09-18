@@ -1,0 +1,47 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 14
+skinparam stateBackgroundColor #F0F6FA
+skinparam stateBorderColor #254C66
+skinparam ArrowColor #254C66
+skinparam nodesep 55
+skinparam ranksep 50
+hide empty description
+title Modelo dinâmico UML - SolicitacaoIndicacao\nCiclo de vida proposto | SubEquipe 02 | v1.0
+
+state Rascunho {
+}
+Rascunho : editarDados / atualizar rascunho
+Rascunho : enviar [noPrazo e não apta] /\n informar pendências; preservar dados
+state Protocolada
+state "Em análise" as EmAnalise
+state Deferida
+state Indeferida
+state Cancelada
+state Expirada
+
+[*] --> Rascunho
+Rascunho --> Protocolada : enviar [noPrazo e apta]\n/ gerar protocolo; congelar dados enviados
+Rascunho --> Expirada : enviar [não noPrazo]\n/ informar prazo encerrado
+Rascunho --> Cancelada : cancelar / encerrar rascunho
+Protocolada --> EmAnalise : iniciarAnalise [órgão autorizado]\n/ registrar início
+EmAnalise --> Deferida : deferir [órgão autorizado e justificativa válida]\n/ registrar decisão favorável
+EmAnalise --> Indeferida : indeferir [órgão autorizado e justificativa válida]\n/ registrar decisão desfavorável
+Deferida --> [*]
+Indeferida --> [*]
+Cancelada --> [*]
+Expirada --> [*]
+
+legend bottom
+  Contexto: proprietário pessoa física solicita a indicação de um condutor.
+  apta = sessão válida e requerente autorizado e dados/documentos válidos
+  e ausência de outra solicitação ativa para o auto.
+  noPrazo = agora <= auto.limiteIndicacao (decisão do protótipo).
+  Expirada é constatada na tentativa de envio: não há temporizador modelado.
+  Depois do protocolo, o prazo de envio não encerra a análise.
+  Eventos sem transição habilitada não alteram o estado.
+endlegend
+@enduml
