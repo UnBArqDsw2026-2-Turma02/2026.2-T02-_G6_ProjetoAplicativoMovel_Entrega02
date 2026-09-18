@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="6U-zioUPym9nJdZkApPG" name="Diagrama de Objetos">
+    <mxGraphModel dx="2343" dy="1243" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=5;fontSize=12;align=center;verticalAlign=middle;" value="condutor1 : Condutor" vertex="1">
+          <mxGeometry height="30" width="220" x="123" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="nome = &quot;Carlos Andrade&quot;&#xa;cpf = &quot;123.456.789-00&quot;&#xa;nomeDaMae = &quot;Marta Andrade&quot;&#xa;dataNascimento = &quot;10/05/1990&quot;&#xa;enderecoResidencial = &quot;Rua Fictícia, 123 - Goiânia/GO&quot;" vertex="1">
+          <mxGeometry height="96" width="220" x="123" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=5;fontSize=12;align=center;verticalAlign=middle;" value="habilitacao1 : Habilitacao" vertex="1">
+          <mxGeometry height="30" width="220" x="523" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="numeroRegistro = &quot;01234567890&quot;&#xa;categoriaAtual = &quot;B&quot;&#xa;status = &quot;Definitiva&quot;&#xa;dataEmissaoPPD = &quot;10/03/2023&quot;&#xa;dataLimitePPD = &quot;10/03/2024&quot;&#xa;bloqueiosAtivos = false" vertex="1">
+          <mxGeometry height="100" width="220" x="523" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=5;fontSize=12;align=center;verticalAlign=middle;" value="solicitacao1 : SolicitacaoAlteracaoCategoria" vertex="1">
+          <mxGeometry height="30" width="280" x="123" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="categoriaDesejada = &quot;AB&quot;&#xa;status = &quot;Em análise&quot;&#xa;dataSolicitacao = 15/09/2026" vertex="1">
+          <mxGeometry height="60" width="280" x="123" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=5;fontSize=12;align=center;verticalAlign=middle;" value="detranGO : OrgaoDeTransito" vertex="1">
+          <mxGeometry height="30" width="220" x="523" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="uf = &quot;GO&quot;" vertex="1">
+          <mxGeometry height="30" width="220" x="523" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-9" edge="1" parent="1" source="PK8IbY0G-Y9SF3LRix8I-2" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="possui">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="522.12" y="213" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-10" edge="1" parent="1" source="PK8IbY0G-Y9SF3LRix8I-4" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.369;entryDx=0;entryDy=0;entryPerimeter=0;" target="PK8IbY0G-Y9SF3LRix8I-17" value="é representada por">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="923" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-11" edge="1" parent="1" source="PK8IbY0G-Y9SF3LRix8I-17" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="PK8IbY0G-Y9SF3LRix8I-18" value="protegido por">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1143" y="180" as="sourcePoint" />
+            <mxPoint x="1323" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-12" edge="1" parent="1" source="PK8IbY0G-Y9SF3LRix8I-2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;startArrow=none;fontSize=11;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" target="PK8IbY0G-Y9SF3LRix8I-5" value="realiza">
+          <mxGeometry relative="1" x="0.0041" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-13" edge="1" parent="1" source="PK8IbY0G-Y9SF3LRix8I-6" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="PK8IbY0G-Y9SF3LRix8I-7" value="validada por">
+          <mxGeometry relative="1" x="-0.0073" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#999999;align=left;verticalAlign=top;fontSize=11;spacing=8;" value="LEGENDA&#xa;&#xa;Caixa azul, cabeçalho sublinhado = objeto instanciado (Artur: solicitacao1, detranGO · Lara: documento1, chave1 · Beatriz: condutor1, habilitacao1)&#xa;&#xa;Notação: nomeDaInstancia : NomeDaClasse (cabeçalho sublinhado),&#xa;seguido dos atributos com valores concretos. Objetos não exibem&#xa;operações nem multiplicidade — isso é do Diagrama de Classes.&#xa;&#xa;Cenário: mesmo caso documentado na Entrega 1 (condutor categoria&#xa;B solicitando alteração para AB junto ao Detran-GO), com dados&#xa;fictícios por se tratar de repositório público." vertex="1">
+          <mxGeometry height="180" width="420" x="923" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=5;fontSize=12;align=center;verticalAlign=middle;" value="chave1 : ChaveDeAcesso" vertex="1">
+          <mxGeometry height="30" width="280" x="1324" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=5;fontSize=12;align=center;verticalAlign=middle;" value="documento1 : DocumentoDigital" vertex="1">
+          <mxGeometry height="30" width="280" x="919" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="&lt;div&gt;codigo = &quot;DOC-2026-045&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp;dataEmissao = &quot;01/03/2026&quot;&amp;nbsp;&lt;/div&gt;&lt;div&gt;carimboAtualizacao = &quot;15/09/2026&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp;status = &quot;vinculado&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="280" x="919" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="PK8IbY0G-Y9SF3LRix8I-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="&lt;div&gt;codigo = &quot;CH-7B2E&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp;dataGeracao = &quot;01/03/2026&quot;&amp;nbsp;&lt;/div&gt;&lt;div&gt;validade = &quot;01/03/2027&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="280" x="1324" y="165" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

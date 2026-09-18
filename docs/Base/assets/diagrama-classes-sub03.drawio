@@ -1,17 +1,29 @@
-<mxfile host="app.diagrams.net" agent="SubEquipe_03">
+<mxfile host="app.diagrams.net" agent="SubEquipe_03" pages="2">
   <diagram id="DiagramaClasses_CNH" name="Diagrama de Classes">
-    <mxGraphModel dx="1607" dy="549" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="1480" dy="785" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="titulo" parent="1" style="text;html=1;align=center;fontSize=16;fontStyle=1;" value="Diagrama de Classes — Domínio de CNH (SubEquipe_03)" vertex="1">
           <mxGeometry height="30" width="900" x="60" y="10" as="geometry" />
         </mxCell>
-        <mxCell id="c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b3b3b3;dashed=1;fontSize=12;fontColor=#999999;verticalAlign=top;spacing=10;fontStyle=1;" value="Condutor&#xa;&#xa;[PAPEL 3 — preencher&#xa;atributos e operações]" vertex="1">
-          <mxGeometry height="140" width="220" x="60" y="60" as="geometry" />
+        <mxCell id="c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" value="Condutor" vertex="1">
+          <mxGeometry height="30" width="220" x="60" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b3b3b3;dashed=1;fontSize=12;fontColor=#999999;verticalAlign=top;spacing=10;fontStyle=1;" value="Habilitacao&#xa;&#xa;[PAPEL 3 — preencher&#xa;atributos e operações]" vertex="1">
-          <mxGeometry height="130" width="220" x="460" y="60" as="geometry" />
+        <mxCell id="c1a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="- nome: String&#xa;- cpf: String&#xa;- nomeDaMae: String&#xa;- dataNascimento: Date&#xa;- enderecoResidencial: String" vertex="1">
+          <mxGeometry height="90" width="220" x="60" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="c1o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="+ consultarHabilitacao(): Habilitacao&#xa;+ solicitarAlteracaoCategoria(categoria: String): SolicitacaoAlteracaoCategoria" vertex="1">
+          <mxGeometry height="60" width="220" x="60" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" value="Habilitacao" vertex="1">
+          <mxGeometry height="30" width="220" x="460" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c2a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="- numeroRegistro: String&#xa;- categoriaAtual: String&#xa;- status: String&#xa;- dataEmissaoPPD: Date&#xa;- dataLimitePPD: Date&#xa;- bloqueiosAtivos: boolean" vertex="1">
+          <mxGeometry height="100" width="220" x="460" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="c2o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="+ monitorarHistoricoInfracoes(): boolean&#xa;+ tornarDefinitiva()&#xa;+ cassar()&#xa;+ solicitarSegundaVia()" vertex="1">
+          <mxGeometry height="70" width="220" x="460" y="190" as="geometry" />
         </mxCell>
         <mxCell id="c5h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" value="SolicitacaoAlteracaoCategoria" vertex="1">
           <mxGeometry height="30" width="260" x="60" y="420" as="geometry" />
@@ -29,10 +41,13 @@
           <mxGeometry height="30" width="220" x="460" y="450" as="geometry" />
         </mxCell>
         <mxCell id="c6o" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="+ validarCategoria(sol: SolicitacaoAlteracaoCategoria): boolean&#xa;+ encaminharAtendimentoPresencial()" vertex="1">
-          <mxGeometry height="45" width="220" x="460" y="480" as="geometry" />
+          <mxGeometry height="56" width="220" x="460" y="480" as="geometry" />
         </mxCell>
-        <mxCell id="r1" edge="1" parent="1" source="c1" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;" target="c2" value="possui">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="r1" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;" value="possui">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="139.47" as="sourcePoint" />
+            <mxPoint x="460" y="139.47" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="r1m1" parent="1" style="text;html=1;fontSize=10;" value="1" vertex="1">
           <mxGeometry height="20" width="20" x="300" y="115" as="geometry" />
@@ -40,9 +55,9 @@
         <mxCell id="r1m2" parent="1" style="text;html=1;fontSize=10;" value="1" vertex="1">
           <mxGeometry height="20" width="20" x="435" y="115" as="geometry" />
         </mxCell>
-        <mxCell id="r2" edge="1" parent="1" source="c2" style="edgeStyle=none;html=1;endArrow=diamondThin;startArrow=none;endFill=1;fontSize=11;" value="é representada por">
+        <mxCell id="r2" edge="1" parent="1" source="c2a" style="edgeStyle=none;html=1;endArrow=diamondThin;startArrow=none;endFill=1;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="é representada por">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="860" y="115.9375" as="targetPoint" />
+            <mxPoint x="869.47" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="r2m1" parent="1" style="text;html=1;fontSize=10;" value="1" vertex="1">
@@ -51,8 +66,9 @@
         <mxCell id="r2m2" parent="1" style="text;html=1;fontSize=10;" value="1" vertex="1">
           <mxGeometry height="20" width="20" x="835" y="115" as="geometry" />
         </mxCell>
-        <mxCell id="r3" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;" value="protegido por">
-          <mxGeometry relative="1" as="geometry">
+        <mxCell id="r3" edge="1" parent="1" source="JfdlH694HNBqeDUtV0j9-5" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="JfdlH694HNBqeDUtV0j9-8" value="protegido por">
+          <mxGeometry relative="1" x="0.0058" as="geometry">
+            <mxPoint as="offset" />
             <mxPoint x="1080" y="112.5" as="sourcePoint" />
             <mxPoint x="1260" y="112.5" as="targetPoint" />
           </mxGeometry>
@@ -63,17 +79,19 @@
         <mxCell id="r3m2" parent="1" style="text;html=1;fontSize=10;" value="1" vertex="1">
           <mxGeometry height="20" width="20" x="1235" y="105" as="geometry" />
         </mxCell>
-        <mxCell id="r4" edge="1" parent="1" source="c1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;startArrow=none;fontSize=11;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="c5h" value="realiza">
+        <mxCell id="r4" edge="1" parent="1" source="c1o" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;startArrow=none;fontSize=11;exitX=0.407;exitY=1.058;entryX=0.5;entryY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="c5h" value="realiza">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="r4m1" parent="1" style="text;html=1;fontSize=10;" value="1" vertex="1">
-          <mxGeometry height="20" width="20" x="90" y="360" as="geometry" />
+          <mxGeometry height="20" width="20" x="153" y="240" as="geometry" />
         </mxCell>
         <mxCell id="r4m2" parent="1" style="text;html=1;fontSize=10;" value="0..*" vertex="1">
-          <mxGeometry height="20" width="30" x="90" y="400" as="geometry" />
+          <mxGeometry height="20" width="30" x="193" y="398" as="geometry" />
         </mxCell>
-        <mxCell id="r5" edge="1" parent="1" source="c5o" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;" target="c6h" value="validada por">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="r5" edge="1" parent="1" source="c5a" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=11;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="c6a" value="validada por">
+          <mxGeometry relative="1" x="-0.0076" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="r5m1" parent="1" style="text;html=1;fontSize=10;" value="0..*" vertex="1">
           <mxGeometry height="20" width="30" x="330" y="430" as="geometry" />
@@ -81,7 +99,7 @@
         <mxCell id="r5m2" parent="1" style="text;html=1;fontSize=10;" value="1" vertex="1">
           <mxGeometry height="20" width="20" x="435" y="430" as="geometry" />
         </mxCell>
-        <mxCell id="legenda" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#999999;align=left;verticalAlign=top;fontSize=11;spacing=8;" value="LEGENDA&#xa;&#xa;Caixa azul cheia = classe detalhada (Artur — agrupamento Processo de Alteração de Categoria)&#xa;Caixa cinza tracejada = classe reservada, aguardando atributos e operações&#xa;Diamante preenchido = composição (o todo controla o ciclo de vida da parte)&#xa;Linha simples = associação (multiplicidade nas duas pontas)&#xa;&#xa;As relações entre todas as classes já foram combinadas em equipe — cada&#xa;responsável detalha atributos e operações da própria classe sem alterar as&#xa;ligações nem as multiplicidades sem antes avisar no grupo." vertex="1">
+        <mxCell id="legenda" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#999999;align=left;verticalAlign=top;fontSize=11;spacing=8;" value="LEGENDA&#xa;&#xa;Caixa azul cheia = classe detalhada (Artur: Processo de Alteração de Categoria · Lara: Documento e Segurança · Beatriz: Identidade do Condutor)&#xa;Diamante preenchido = composição (o todo controla o ciclo de vida da parte)&#xa;Linha simples = associação (multiplicidade nas duas pontas)&#xa;&#xa;As relações entre todas as classes já foram combinadas em equipe — cada&#xa;responsável detalha atributos e operações da própria classe sem alterar as&#xa;ligações nem as multiplicidades sem antes avisar no grupo." vertex="1">
           <mxGeometry height="150" width="420" x="860" y="420" as="geometry" />
         </mxCell>
         <mxCell id="JfdlH694HNBqeDUtV0j9-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" value="DocumentoDigital" vertex="1">
@@ -102,6 +120,14 @@
         <mxCell id="JfdlH694HNBqeDUtV0j9-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacing=6;" value="&lt;div&gt;+ gerar()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ validar()&lt;/div&gt;" vertex="1">
           <mxGeometry height="48" width="220" x="1255" y="152" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2N55z2H1sduTIZ28XSP0" name="Página-2">
+    <mxGraphModel dx="1406" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
